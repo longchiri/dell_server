@@ -185,8 +185,8 @@ code.inline{background:var(--code);color:var(--accent2);padding:1px 5px;border-r
     <button class="tabbtn" data-tab="storage" onclick="showTab('storage')">⑤ Storage Array</button>
     <button class="tabbtn" data-tab="network" onclick="showTab('network')">⑥ Network Switch</button>
     <button class="tabbtn" data-tab="os" onclick="showTab('os')">⑦ OS Level</button>
-    <button class="tabbtn" data-tab="glossary" onclick="showTab('glossary')">📖 Glossary</button>
-    <button class="tabbtn" data-tab="quiz" onclick="showTab('quiz')">🎲 Quiz</button>
+    <button class="tabbtn" data-tab="glossary" onclick="showTab('glossary')">📖 용어사전</button>
+    <button class="tabbtn" data-tab="quiz" onclick="showTab('quiz')">🎲 퀴즈</button>
   </div>
 </header>
 
@@ -971,7 +971,7 @@ code.inline{background:var(--code);color:var(--accent2);padding:1px 5px;border-r
 
 <!-- ================= GLOSSARY ================= -->
 <section id="glossary" class="tabpanel">
-  <h2>📖 Glossary <span class="tag">Search unfamiliar terms here</span></h2>
+  <h2>📖 용어사전 <span class="tag">모르는 단어 여기서 검색</span></h2>
   <p class="intro">위 탭들에서 당연하다는 듯 등장하는 약어·전문용어를 따로 모았다. NUMA, TPM, LACP처럼 "이게 뭔지부터 모르겠다" 싶은 단어가 나오면 여기서 검색해서 확인하자.</p>
 
   <div class="glossary-cat"><span class="n">1</span> Hardware / BIOS Terms</div>
@@ -1060,15 +1060,15 @@ code.inline{background:var(--code);color:var(--accent2);padding:1px 5px;border-r
 
 <!-- ================= QUIZ ================= -->
 <section id="quiz" class="tabpanel">
-  <h2>🎲 Random Quiz <span class="tag">Test yourself</span></h2>
+  <h2>🎲 랜덤 퀴즈 <span class="tag">실력 테스트</span></h2>
   <p class="intro">사이트 전체(BIOS·iDRAC·OME·RAID·스토리지·네트워크·OS·용어사전)의 설정값과 용어 설명에서 무작위로 문제를 뽑아 4지선다로 테스트한다. 면접·필기 대비 복습용으로 반복해서 풀어보자.</p>
 
   <div class="quiz-box">
     <div class="quiz-controls">
       <div class="rc-field">
-        <label>Category</label>
+        <label>카테고리</label>
         <select id="quizCategory" onchange="newQuestion()">
-          <option value="all">All (전체)</option>
+          <option value="all">전체</option>
           <option value="bios">BIOS Setup</option>
           <option value="idrac">iDRAC</option>
           <option value="ome">OME</option>
@@ -1076,11 +1076,11 @@ code.inline{background:var(--code);color:var(--accent2);padding:1px 5px;border-r
           <option value="storage">Storage Array</option>
           <option value="network">Network Switch</option>
           <option value="os">OS Level</option>
-          <option value="glossary">Glossary</option>
+          <option value="glossary">용어사전</option>
         </select>
       </div>
-      <div class="quiz-score">Score: <b id="quizScore">0</b> / <span id="quizTotal">0</span></div>
-      <button class="quiz-newbtn" onclick="newQuestion()">🔀 New Question</button>
+      <div class="quiz-score">점수: <b id="quizScore">0</b> / <span id="quizTotal">0</span></div>
+      <button class="quiz-newbtn" onclick="newQuestion()">🔀 다음 문제</button>
     </div>
 
     <div class="quiz-card" id="quizCard">
